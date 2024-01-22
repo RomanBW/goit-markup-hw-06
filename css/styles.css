@@ -40,6 +40,8 @@ img {
   height: auto;
 }
 
+
+
 /**!=========================================================*/
 
 /**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -52,10 +54,11 @@ img {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  width: 320px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header-container {
@@ -223,31 +226,45 @@ span {
 }
 
 /**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/**------------------------section-main-item----------------------------*/
+/**------------------------section-main-item-2---------------------------*/
 
 /**?____section-main-item____**/
 .section-main-item {
   padding-bottom: 120px;
   padding-top: 120px;
+ 
 }
 
 .main-item-link {
-  gap: 24px;
-  display: flex;
+   /* gap: 24px; */
+  display: flex; 
+
+align-items: center;
+gap: 72px;
+flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 16px;
 }
 
 .main-list-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .main-item {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  /* font-size: 20px; */
+  /* font-weight: 500; */
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  /* line-height: 1.2; */
+  line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-transform: capitalize;
+  align-self: stretch;
 }
+
 
 .visually-hidden {
   margin-bottom: 8px;
@@ -267,13 +284,14 @@ span {
 
 .main-item-text {
   color: #434455;
-  font-family: Roboto;
+  width: 288px;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  /* font-weight: 400; */
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 
 .icon {
   display: flex;
@@ -285,10 +303,11 @@ span {
   margin-bottom: 8px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   fill: none;
+  opacity: 0; visability: hidden; display: none;
 }
 
 /**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/**------------------------TEAM----------------------------*/
+/**------------------------TEAM-3----------------------------*/
 /**?____section-team____**/
 
 .section-team {
@@ -633,7 +652,7 @@ fill: #FFF;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+    opacity: 0; visability: hidden; display: none;
   }
 
   
@@ -833,3 +852,24 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
+
+/**!=========================================================*/
+
+/**!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/**------------------------media----------------------------*/
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  
+  .main-item-link {
+    flex-direction: column;
+    gap: 24;
+    
+}
+.main-list-item {
+  width: calc((100% - 24px) / 2);
+}
+}
