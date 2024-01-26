@@ -305,6 +305,7 @@ color: #4D5AE5;
 /**------------------------MAIN----------------------------*/
 /**?____section-main-dark____**/
 .section-main-dark {
+  margin:0 auto;
   /* max-width: 1440px; */
   display: inline-block;
   width: 100%;
@@ -312,15 +313,22 @@ color: #4D5AE5;
   background-color: #2e2f42;
   /* padding: 188px 0; */
   justify-content: center;
-  background-image: url(../images/people-office1.png);
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(
+  background-image: url(../images/people-office-mob.jpg);
+  /* background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/people-office1.jpg); */
   background-repeat: no-repeat;
+  
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .section-main-dark {
+    background-image: url(../images/people-office-mob-2x.jpg);
+  }
 }
 
 .main-title {
@@ -833,7 +841,7 @@ fill: #FFF;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* opacity: 0; visibility: hidden; display: none; */
+    opacity: 0; visibility: hidden; display: none;
   }
 
   
@@ -976,7 +984,6 @@ height: 623px;
 
 .form-checkbox {
   display: block;
-width: 256px;
   margin-bottom: 24px;
   
 }
@@ -1122,6 +1129,21 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   height: 436px;
   padding: 112px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tabl.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .section-main-dark {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/Dark-bg-tabl-2x.jpg);
+}
 }
 
 .main-title {
@@ -1317,8 +1339,24 @@ align-items: center;
   max-width: 1440px;
   padding: 188px 0;
   flex-shrink: 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
   
 }
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .section-main-dark {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/people-office-2x.jpg);
+}
+}
+
 .main-title {
   font-size: 56px;
   max-width: 496px;
