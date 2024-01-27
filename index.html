@@ -209,7 +209,9 @@
           <ul class="section-team-link">
             <li class="team-link-item">
               <img
-                src="./images/images_mark.jpg"
+              srcset="./images/images_mark.jpg 1x, 
+              ./images/images_mark-2x.jpg 2x"
+              src="./images/images_mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -249,7 +251,11 @@
               </div>
             </li>
             <li class="team-link-item">
-              <img src="./images/images_tom.jpg" alt="Tom Ford" width="264" />
+              <img srcset="./images/images_tom.jpg 1x, 
+              ./images/images_tom-2x.jpg 2x" 
+              src="./images/images_tom.jpg"
+              alt="Tom Ford" 
+              width="264" />
               <div class="container-text">
                 <h3 class="section-title-name">Tom Ford</h3>
                 <p class="section-title-content">Frontend Developer</p>
@@ -287,7 +293,9 @@
             </li>
             <li class="team-link-item">
               <img
-                src="./images/images_camila.jpg"
+              srcset="./images/images_camila.jpg 1x, 
+              ./images/images_camila-2x.jpg 2x"
+              src="./images/images_camila.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -328,7 +336,9 @@
             </li>
             <li class="team-link-item">
               <img
-                src="./images/images_daniel.jpg"
+              srcset="./images/images_daniel.jpg 1x, 
+              ./images/images_daniel-2x.jpg 2x"
+              src="./images/images_daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -377,11 +387,17 @@
           <ul class="portfolio-link">
             <li class="portfolio-item-text">
               <div class="img-our">
-                <img
+                <picture>
+                  <source srcset="./images/img_1min.jpg 1x, ./images/img_1min-2x.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/img_1min-tabl.jpg 1x, ./images/img_1min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/img_1min-mob.jpg 1x, ./images/img_1min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
                   src="./images/img_1min.jpg"
                   alt="Banking App"
                   width="360"
                 />
+                </picture>
+                
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -395,11 +411,16 @@
             </li>
             <li class="portfolio-item-text">
               <div class="img-our">
-                <img
-                  src="./images/img_2min.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
+               <picture>
+                  <source srcset="./images/img_2min.jpg 1x, ./images/img_2min-2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/img_2min-tabl.jpg 1x, ./images/img_2min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/img_2min-mob.jpg 1x, ./images/img_2min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
+                    src="./images/img_2min.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+               </picture>
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -412,12 +433,17 @@
               </div>
             </li>
             <li class="portfolio-item-text">
-              <div class="img-our">
-                <img
-                  src="./images/img_3min.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <div class="img-our">
+              <picture>
+                  <source srcset="./images/img_3min.jpg 1x, ./images/img_3min-2x.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/img_3min-tabl.jpg 1x, ./images/img_3min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/img_3min-mob.jpg 1x, ./images/img_3min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
+                    src="./images/img_3min.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
+              </picture>
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -431,11 +457,16 @@
             </li>
             <li class="portfolio-item-text">
               <div class="img-our">
-                <img
-                  src="./images/img_4min.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
+                <picture>
+                  <source srcset="./images/img_4min.jpg 1x, ./images/img_4min-2x.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/img_4min-tabl.jpg 1x, ./images/img_4min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/img_4min-mob.jpg 1x, ./images/img_4min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
+                    src="./images/img_4min.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
+                </picture>
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -449,11 +480,16 @@
             </li>
             <li class="portfolio-item-text">
               <div class="img-our">
-                <img
-                  src="./images/img_5min.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+               <picture>
+                  <source srcset="./images/img_5min.jpg 1x, ./images/img_5min-2x.jpg 2x" media="(min-width: 1158px)">
+                    <source srcset="./images/img_5min-tabl.jpg 1x, ./images/img_5min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/img_5min-mob.jpg 1x, ./images/img_5min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
+                    src="./images/img_5min.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
+               </picture>
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -467,11 +503,16 @@
             </li>
             <li class="portfolio-item-text">
               <div class="img-our">
-                <img
-                  src="./images/img_6min.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                <picture>
+                  <source srcset="./images/img_6min.jpg 1x, ./images/img_6min-2x.jpg 2x" media="(min-width: 1158px)">
+                  <source srcset="./images/img_6min-tabl.jpg 1x, ./images/img_6min-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/img_6min-mob.jpg 1x, ./images/img_6min-mob-2x.jpg 2x" media="(max-width: 768px)">
+                  <img
+                    src="./images/img_6min.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
+                </picture>
                 <p class="img-our-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
